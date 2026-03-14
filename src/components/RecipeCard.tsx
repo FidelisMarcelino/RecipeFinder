@@ -25,10 +25,12 @@ export default function RecipeCard({ recipe, onSaveToggle }: Props) {
     <div className="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow flex flex-col relative overflow-hidden">
       <button
         onClick={handleSaveToggle}
-        className={`absolute top-2 right-2 p-2 text-2xl drop-shadow-md transition hover:scale-110 z-10 ${isSaved ? 'text-yellow-400' : 'text-gray-300 hover:text-gray-400'}`}
+        className="absolute top-3 right-3 w-10 h-10 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-md transition hover:scale-110 z-10"
         title={isSaved ? "Remove from Saved" : "Save Recipe"}
       >
-        {isSaved ? '★' : '☆'}
+        <span className={`text-2xl leading-none ${isSaved ? 'text-yellow-500' : 'text-gray-400 hover:text-gray-600'}`}>
+          {isSaved ? '★' : '☆'}
+        </span>
       </button>
 
       <img
