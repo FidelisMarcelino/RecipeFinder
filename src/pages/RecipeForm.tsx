@@ -55,7 +55,9 @@ export default function RecipeForm() {
       <h2 className="text-2xl font-bold mb-4">{id ? "Edit Recipe" : "Create Recipe"}</h2>
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
         <div>
-          <label className="block font-semibold mb-1">Recipe Name *</label>
+          <label className="block font-semibold mb-1">
+            Recipe Name <span className="text-red-500">*</span>
+          </label>
           <input
             type="text"
             required
@@ -135,7 +137,7 @@ export default function RecipeForm() {
         </div>
 
         <div>
-          <label className="block font-semibold mb-1">Image (Upload or URL)</label>
+          <label className="block font-semibold mb-1">Image (Upload or URL) <span className="text-red-500">*</span></label>
           <div className="flex flex-col gap-2">
             <input
               type="file"
@@ -161,7 +163,7 @@ export default function RecipeForm() {
         </div>
 
         <div>
-          <label className="block font-semibold mb-1">Instructions</label>
+          <label className="block font-semibold mb-1">Instructions <span className="text-red-500">*</span></label>
           <textarea
             rows={5}
             className="w-full border border-gray-300 p-2 rounded"

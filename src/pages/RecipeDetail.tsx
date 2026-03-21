@@ -32,7 +32,7 @@ export default function RecipeDetail() {
       <div className="mb-4">
         <button
           onClick={() => navigate(-1)}
-          className="text-gray-500 hover:text-gray-800 flex items-center gap-1 transition-colors"
+          className="text-gray-500 hover:text-gray-800 flex items-center gap-1 transition-colors cursor-pointer"
         >
           <span>&larr;</span> Back
         </button>
@@ -45,13 +45,13 @@ export default function RecipeDetail() {
         <div className="flex gap-2">
           <button
             onClick={() => navigate(`/edit/${id}`)}
-            className="px-4 py-2 bg-blue-500 text-white rounded shadow hover:bg-blue-600 transition"
+            className="px-4 py-2 bg-blue-500 text-white rounded shadow hover:bg-blue-600 transition cursor-pointer"
           >
             Edit
           </button>
           <button
             onClick={handleDelete}
-            className="px-4 py-2 bg-red-500 text-white rounded shadow hover:bg-red-600 transition"
+            className="px-4 py-2 bg-red-500 text-white rounded shadow hover:bg-red-600 transition cursor-pointer"
           >
             Delete
           </button>

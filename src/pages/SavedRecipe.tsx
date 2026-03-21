@@ -28,7 +28,7 @@ export default function SavedRecipes() {
           </Link>
         </div>
       ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-4">
           {recipes.map(r => (
             <div key={r.idMeal} className="relative group">
               <RecipeCard recipe={r} onSaveToggle={loadSavedRecipes} />

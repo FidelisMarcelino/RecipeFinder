@@ -49,7 +49,7 @@ export default function RecipeCard({ recipe, onSaveToggle }: Props) {
         <div className="mt-auto">
           <button
             onClick={() => navigate(`/recipe/${recipe.idMeal}`)}
-            className="w-full bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-4 rounded transition-colors"
+            className="w-full bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-4 rounded transition-colors cursor-pointer"
           >
             View Recipe
           </button>

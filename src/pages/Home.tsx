@@ -24,7 +24,7 @@ export default function Home() {
 
   return (
     <div>
-      <h1 className="text-3xl font-bold text-center my-6">Recipe Finder</h1>
+      <h1 className="text-3xl font-bold text-center my-6 text-green-500">Recipe Finder</h1>
 
       <div className="flex justify-center mb-8">
         <input
